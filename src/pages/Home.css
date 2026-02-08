@@ -1,0 +1,121 @@
+/* Home Page Styles */
+
+/* Featured Menu Section */
+.home-menu {
+  padding: 60px 20px;
+  background-color: #fff8f0;
+  text-align: center;
+}
+
+.home-menu-header h2 {
+  font-size: 2rem;
+  color: #c0392b;
+  margin-bottom: 10px;
+}
+
+.home-menu-header p {
+  font-size: 1rem;
+  color: #2c3e50;
+  margin-bottom: 40px;
+}
+
+.home-menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.home-menu-button {
+  margin-top: 40px;
+}
+
+/* Fade-up Animation */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Staggered animation for menu items */
+.home-menu-grid > * {
+  opacity: 0;
+  animation: fadeUp 0.6s ease forwards;
+}
+
+.home-menu-grid > *:nth-child(1) { animation-delay: 0.1s; }
+.home-menu-grid > *:nth-child(2) { animation-delay: 0.2s; }
+.home-menu-grid > *:nth-child(3) { animation-delay: 0.3s; }
+
+/* About Section */
+.home-about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 3rem;
+  padding: 6rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.home-about-content {
+  flex: 1 1 400px;
+}
+
+.home-about-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.home-about-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.home-about-image {
+  flex: 1 1 400px;
+}
+
+.home-about-image img {
+  width: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  /* Featured Menu */
+  .home-menu-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .home-menu-header p {
+    font-size: 0.9rem;
+  }
+
+  .home-menu-grid {
+    gap: 15px;
+  }
+
+  /* About Section */
+  .home-about {
+    flex-direction: column;
+    padding: 4rem 1rem;
+    gap: 2rem;
+  }
+
+  .home-about-content h2 {
+    font-size: 2rem;
+  }
+
+  .home-about-content p {
+    font-size: 1rem;
+  }
+}
