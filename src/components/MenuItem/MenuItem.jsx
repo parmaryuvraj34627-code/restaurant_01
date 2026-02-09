@@ -18,7 +18,7 @@ export default function MenuItem({ item }) {
           whileHover={{ scale: 1.08 }}
           transition={{ duration: 0.3 }}
           onError={(e) => {
-            e.target.src = "/images/placeholder.png";
+            e.target.src = "/images/placeholder.jpg";
           }}
         />
       </div>
