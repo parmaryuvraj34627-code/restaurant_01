@@ -4,37 +4,37 @@ const menuItems = [
     id: 1,
     name: "Margherita Pizza",
     price: 12.99,
-    image: "/src/assets/images/dish1.jpg",
+    image: "public/images/dish1.jpg",
   },
   {
     id: 2,
     name: "Spaghetti Carbonara",
     price: 14.99,
-    image: "/src/assets/images/dish2.jpg",
+    image: "public/images/dish2.jpg",
   },
   {
     id: 3,
     name: "Grilled Salmon",
     price: 18.99,
-    image: "/src/assets/images/dish3.jpg",
+    image: "public/images/dish3.jpg",
   },
   {
     id: 4,
     name: "Caesar Salad",
     price: 9.99,
-    image: "/src/assets/images/dish4.jpg",
+    image: "public/images/dish4.jpg",
   },
   {
     id: 5,
     name: "Tiramisu",
     price: 6.99,
-    image: "/src/assets/images/dessert1.jpg",
+    image: "public/images/dessert1.jpg",
   },
   {
     id: 6,
     name: "Chocolate Lava Cake",
     price: 7.99,
-    image: "/src/assets/images/dessert2.jpg",
+    image: "public/images/dessert2.jpg",
   },
 ];
 

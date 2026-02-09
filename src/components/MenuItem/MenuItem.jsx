@@ -14,10 +14,11 @@ export default function MenuItem({ item }) {
         <motion.img
           src={item.image}
           alt={item.name}
+          loading="lazy"
           whileHover={{ scale: 1.08 }}
           transition={{ duration: 0.3 }}
           onError={(e) => {
-            e.target.src = "/images/placeholder.png"; // fallback if image not found
+            e.target.src = "/images/placeholder.png";
           }}
         />
       </div>
@@ -25,10 +26,16 @@ export default function MenuItem({ item }) {
       {/* Content */}
       <div className="menu-item-content">
         <h3 className="menu-item-name">{item.name}</h3>
+
         {item.description && (
-          <p className="menu-item-description">{item.description}</p>
+          <p className="menu-item-description">
+            {item.description}
+          </p>
         )}
-        <span className="menu-item-price">{item.price.toFixed(2)}</span>
+
+        <span className="menu-item-price">
+          {item.price.toFixed(2)}
+        </span>
       </div>
     </motion.div>
   );

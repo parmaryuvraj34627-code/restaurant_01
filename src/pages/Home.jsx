@@ -105,7 +105,7 @@ export default function Home() {
           transition={{ duration: 0.6 }}
         >
           <img
-            src="/src/assets/images/about-restaurant.jpg"
+            src="/images/about-restaurant.jpg"
             alt="About Our Restaurant"
           />
         </motion.div>

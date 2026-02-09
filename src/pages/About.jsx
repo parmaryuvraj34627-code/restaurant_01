@@ -1,5 +1,5 @@
 import "./About.css";
-import chefImg from "../assets/images/chef.jpg";
+import chefImg from "/images/chef.jpg";
 
 export default function About() {
   return (
